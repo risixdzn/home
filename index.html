@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Amorim - Editor de Vídeo</title>
+    <meta name="description" content="Editor de Vídeo, experiente em Adobe Premiere, After Effects e Photoshop.">
+    <link rel="stylesheet" href="indexstyle.css" />
+<body>      
+    <header>
+        <nav>
+            <div class="container">
+                <img class="headerimg" src="/Imgs/Logo.svg">
+    
+                <div class="menu">
+                    <a href="#" class="is-active">Home</a>
+                    <a href="#">Portfólio</a>
+                    <a href="#">Preços</a>
+                    <a href="#">Contato</a>
+                </div>
+        
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>        
+        </nav>  
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="#">Home</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Preços</a>
+        <a href="#">Contato</a>
+    </nav>   
+
+    <script src="main.js"></script>
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="conteudo-home">
+                <h2 class="homesubtitle1">Editor de vídeo.</h2>
+                <h1 class="hometitle1">RICARDO</h1>
+                <h1 class="hometitle2">AMORIM</h1>
+                <h3><img class="homenickimg" src="/Imgs/RISIXDZN.svg"> </h3>            
+                <button class="homebuttonctt" onclick="window.location.href = 'https://twitter.com/risixdzn';" target="_blank">
+                    Contato
+                </button>
+            </div>
+        </div>
+
+        <div class="imgleesin">
+            <img class="imgleesinbg" href="https://youtube.com/watch?v=mlvysfy6RmQ" src="/Imgs/leesin-bg-shape.png">
+        </div>
+
+        <video id="videoBG" poster="/Vids/bgframe-buzzkill-purple.jpg" autoplay muted loop>
+            <source src="/Vids/bg-buzzkill-purplehigh_12.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+</body>
+</html>
