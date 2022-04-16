@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Amorim - Editor de Vídeo</title>
+    <meta name="description" content="Editor de Vídeo, experiente em Adobe Premiere, After Effects e Photoshop.">
+    <link rel="stylesheet" href="indexstyle.css" />
+    <link rel="shortcut icon" type="image/png" href="./Imgs/favicon.png">
+    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<body>      
+    <header>
+        <nav>
+            <div class="container">
+                <img class="headerimg" src="Imgs/Logo.svg">
+    
+                <div class="menu">
+                    <a href="home.html" class="is-active">Home</a>
+                    <a href="../Portfolio/portfolio.html">Portfólio</a>
+                    <a href="#">Preços</a>
+                    <a href="#">Contato</a>
+                </div>
+                                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>        
+        </nav>  
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="home.html">Home</a>
+        <a href="../Portfolio/portfolio.html">Portfólio</a>
+        <a href="#">Preços</a>
+        <a href="#">Contato</a>
+    </nav>   
+
+    <script src="main.js"></script> 
+    
+    <!--sessão home-->
+    <section class="home" id="home">
+        <div class="max-width-home">
+            <div class="conteudo-home">
+                <h2 class="homesubtitle1">Editor de vídeo.</h2>
+                <h1 class="hometitle1">RICARDO</h1>
+                <h1 class="hometitle2">AMORIM</h1>
+                <h3><img class="homenickimg" src="Imgs/RISIXDZN.svg"> </h3>            
+                <button class="homebuttonctt" onclick="window.location.href = 'https://twitter.com/risixdzn';" target="_blank">
+                    Contato
+                </button>
+                
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="imgleesin">
+            <img class="imgleesinbg" href="https://youtube.com/watch?v=mlvysfy6RmQ" src="Imgs/leesin-bg-shape.png">
+        </div>
+
+        <video id="videoBGhome" poster="Vids/bgframe-buzzkill-purple.jpg" autoplay muted loop>
+            <source src="Vids/bg-buzzkill-purplehigh_12.mp4" type="video/mp4">
+        </video>
+    </section>    
+
+    <!--sobre section-->
+    <section class="sobre" id="sobre">
+        <div class="sobre-max-width">
+            <div class="sobre-titulo">            
+                <p class="sobre-sobre">Sobre</p>                   
+            </div>
+            
+            <div class="sobre-conteudo">
+                <div class="sobre-coluna1">
+                    <div class="sobre-imagem">
+                        <img class="leesinsobre" src="Imgs/leesin-meditate-shape.png">
+                    </div>
+                </div>
+    
+                <div class="sobre-coluna2"></div>
+                    <div class="conteudo-sobre-coluna2">
+                        <div class="sobre-texto">
+                            <div class="titulo-sobre">Ricardo Amorim</div>
+                            <p class="sobre-resumo">Edito vídeos a 5 anos. Prezo pela qualidade em meus trabalhos, dando o meu melhor para a suavidade e pela fluidez do vídeo, assim como das animações. Uma edição simples, fluída e leve é a chave para o sucesso, sendo sempre o meu intuito nos vídeos.
+                            </p>                            
+                        </div>
+                        <div class="skills">
+                            <h3 class="titulo-softwares">Softwares:</h3>
+                            <div class="skill html">
+                              <div class="skill-title-main">
+                                <img class="premiere-logo" src="Imgs/adobe-premiere-pro-logo.svg">
+                                <h3 class="skill-title">Premiere</h3>                                                    
+                              </div>                                          
+                              <div class="skill-bar">
+                                <div class="skill-progress-premiere" data-progress="90%"></div>
+                              </div>
+                            </div>
+                            <div class="skill css">
+                                <div class="skill-title-main">
+                                    <img class="after-logo" src="Imgs/adobe-after-effects-logo.svg">
+                                    <h3 class="skill-title-aftereffects">After Effects</h3>
+                                </div>                                
+                              <div class="skill-bar">
+                                <div class="skill-progress-aftereffects" data-progress="70%"></div>
+                              </div>
+                            </div>
+                            <div class="skill js">
+                                <div class="skill-title-main">
+                                    <img class="ps-logo" src="Imgs/adobe-photoshop-logo-2021.svg">
+                                    <h3 class="skill-title">Photoshop</h3>
+                                </div>                                
+                                    <div class="skill-bar">
+                                        <div class="skill-progress-photoshop" data-progress="80%"></div>                                        
+                                    </div>
+                                </div>
+                            </div>                                 
+
+                            <a href="Imgs/pennsando.jpg" class="btn-read-more" download>Baixar CV</a>
+                    </div>                     
+                </div>
+            </div>            
+        </div> 
+    </section>
+</body>
+</html>
