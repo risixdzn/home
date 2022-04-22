@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="indexstyle.css" />
     <link rel="shortcut icon" type="image/png" href="./Imgs/favicon.png">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>       
+    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/scrollreveal"></script>   
 </head>
 
 <body>      
@@ -311,6 +312,26 @@
 
     <!-- footer end -->
 
+    <!--scrollreveal-->
 
-</body>
+    <script>
+      ScrollReveal({
+	      reset: true,
+	      distance: '60px',
+	      duration: 2500,
+	      delay: 400,
+      });
+
+      ScrollReveal().reveal('.sobre-titulo, .services-titulo, .services-subtitulo', { delay: 0, origin: 'left' });     
+      ScrollReveal().reveal('.sobre-coluna1', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.conteudo-sobre-coluna2', { delay: 500, origin: 'right' });
+      ScrollReveal().reveal('.imgleesin', { delay: 0, origin: 'right' });    
+      ScrollReveal().reveal('.conteudo-home, .divisao', { delay: 0, origin: 'left' });  
+      ScrollReveal().reveal('.cards, .containerportfolio', { delay: 200 });    
+      
+    </script>
+
+    <!--scrollreveal end-->
+    
+  </body>
 </html>
