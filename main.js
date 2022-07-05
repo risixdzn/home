@@ -1,3 +1,5 @@
+//header scroll
+
 window.onload = function () {
 	window.addEventListener('scroll', function (e) {
 		if (window.pageYOffset > 100) {
@@ -6,6 +8,20 @@ window.onload = function () {
 			document.querySelector("header").classList.remove('is-scrolling');
 		}
 	});
+
+	//topbtn
+
+	window.addEventListener("scroll", function (e) {
+		if (window.pageYOffset > 100) {
+		  document.querySelector("nav").classList.add("is-scrolling");      
+		  toTop.classList.add("is-active");
+		} else {
+		  document.querySelector("nav").classList.remove("is-scrolling");      
+		  toTop.classList.remove("is-active");
+		}
+	});
+	
+	const toTop = document.querySelector(".to-top");
 
 //hamburger-menu mobile
 
@@ -17,6 +33,7 @@ hamburger.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-active');
 });
 }
+
 
 
 

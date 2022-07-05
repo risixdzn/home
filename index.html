@@ -1,344 +1,356 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">    
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Amorim - Home</title>
     <meta name="description" content="Editor de Vídeo, experiente em Adobe Premiere, After Effects e Photoshop.">
     <link rel="stylesheet" href="indexstyle.css" />
-    <link rel="shortcut icon" type="image/png" href="./Imgs/favicon.png">    
+    <link rel="shortcut icon" type="image/png" href="./Imgs/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>   
-    <script src="https://unpkg.com/scrollreveal"></script>    
-    
-    <meta property='og:title' content='Home - Ricardo Amorim'/>
-    <meta property='og:image' content='https://i.ibb.co/4m2bYKL/imagem-2022-04-23-182533792.png'/>
-    <meta property='og:description' content='Editor de Vídeos. Experiente em Premiere, After Effects e Photoshop.'/>    
-    <meta property='og:url' content='https://risixdzn.github.io/Home/'/>
+    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta property='og:title' content='Home - Ricardo Amorim' />
+    <meta property='og:image' content='https://i.ibb.co/4m2bYKL/imagem-2022-04-23-182533792.png' />
+    <meta property='og:description' content='Editor de Vídeos. Experiente em Premiere, After Effects e Photoshop.' />
+    <meta property='og:url' content='https://risixdzn.github.io/Home/' />
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='627' />
-</head>
-
-<body>      
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="container">
-                <img class="headerimg" src="Imgs/Logo.svg">
-    
-                <div class="menu">
-                    <a href="https://risixdzn.github.io/home" class="is-active">Home</a>
-                    <a href="https://risixdzn.github.io/portfolio">Portfólio</a>
-                    <a href="#">Preços</a>
-                    <a href="https://twitter.com/risixdzn">Contato</a>
-                </div>
-                                
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>        
-        </nav>  
+      <nav>
+        <div class="container">
+          <img class="headerimg" src="Imgs/Logo.svg">
+          <div class="menu">
+            <a href="https://risixdzn.github.io/home" class="is-active">Home</a>
+            <a href="https://risixdzn.github.io/portfolio">Portfólio</a>
+            <a href="https://risixdzn.github.io/precos">Preços</a>
+            <a href="https://twitter.com/risixdzn">Contato</a>
+          </div>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
     </header>
-
     <nav class="mobile-nav">
-        <a href="https://risixdzn.github.io/home">Home</a>
-        <a href="https://risixdzn.github.io/portfolio">Portfólio</a>
-        <a href="#">Preços</a>
-        <a href="https://twitter.com/risixdzn">Contato</a>
-    </nav>   
+      <a href="https://risixdzn.github.io/home">Home</a>
+      <a href="https://risixdzn.github.io/portfolio">Portfólio</a>
+      <a href="https://risixdzn.github.io/precos">Preços</a>
+      <a href="https://twitter.com/risixdzn">Contato</a>
+    </nav>
+    <script src="main.js"></script>
 
-    <script src="main.js"></script> 
-    
+    <!--progressbar-->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <script type="text/javascript">
+      var percent = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+      window.onscroll = function() {
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        var progress = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progress + "%";
+      }
+    </script>
+
+    <!--backtop-->
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!--backtopend-->
+
     <!--sessão home-->
     <section class="home" id="home">
-        <div class="max-width-home">
-            <div class="conteudo-home">
-                <h2 class="homesubtitle1">Editor de vídeo.</h2>
-                <h1 class="hometitle1">RICARDO</h1>
-                <h1 class="hometitle2">AMORIM</h1>
-                <h3><img class="homenickimg" src="Imgs/RISIXDZN.svg"> </h3>            
-                <button class="homebuttonctt" onclick="window.location.href = 'https://twitter.com/risixdzn';" target="_blank">
-                    Contato
-                </button>
-                
-                <div class="social-menu">
-                    <ul>
-                        <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="max-width-home">
+        <div class="conteudo-home">
+          <h2 class="homesubtitle1">Editor de vídeo.</h2>
+          <h1 class="hometitle1">RICARDO</h1>
+          <h1 class="hometitle2">AMORIM</h1>
+          <h3><img class="homenickimg" src="Imgs/RISIXDZN.svg"> </h3>
+          <button class="homebuttonctt" onclick="window.location.href = 'https://twitter.com/risixdzn';" target="_blank">
+            Contato
+          </button>
+          <div class="social-menu">
+            <ul>
+              <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="imgleesin">
-            <img class="imgleesinbg" href="https://youtube.com/watch?v=mlvysfy6RmQ" src="Imgs/leesin-bg-shape.png">
-        </div>
-
-        <video id="videoBGhome" poster="Vids/bgframe-buzzkill-purple.jpg" autoplay muted loop>
-            <source src="Vids/bg-buzzkill-purplehigh_12.mp4" type="video/mp4">
-        </video>
-    </section>    
+      </div>
+      <div class="imgleesin">
+        <img class="imgleesinbg" href="https://youtube.com/watch?v=mlvysfy6RmQ" src="Imgs/leesin-bg-shape.png">
+      </div>
+      <video id="videoBGhome" poster="Vids/bgframe-buzzkill-purple.jpg" autoplay muted loop>
+        <source src="Vids/bg-buzzkill-purplehigh_12.mp4" type="video/mp4">
+      </video>
+    </section>
 
     <!--sobre section-->
     <section class="sobre" id="sobre">
-        <div class="sobre-max-width">
-            <div class="sobre-titulo">            
-                <p class="sobre-sobre">Sobre</p>                   
+      <div class="sobre-max-width">
+        <div class="sobre-titulo">
+          <p class="sobre-sobre">Sobre</p>
+        </div>
+        <div class="sobre-conteudo">
+          <div class="sobre-coluna1">
+            <div class="sobre-imagem">
+              <img class="leesinsobre" src="Imgs/leesin-meditate-shape.png">
             </div>
-            
-            <div class="sobre-conteudo">
-                <div class="sobre-coluna1">
-                    <div class="sobre-imagem">
-                        <img class="leesinsobre" src="Imgs/leesin-meditate-shape.png">
-                    </div>
+          </div>
+          <div class="sobre-coluna2"></div>
+          <div class="conteudo-sobre-coluna2">
+            <div class="sobre-texto">
+              <div class="titulo-sobre">Ricardo Amorim</div>
+              <p class="sobre-resumo">Edito vídeos a 5 anos. Prezo pela qualidade em meus trabalhos, dando o meu melhor para a suavidade e pela fluidez do vídeo, assim como das animações. Uma edição simples, fluída e leve é a chave para o sucesso, sendo sempre o meu intúito nos vídeos.
+              </p>
+            </div>
+            <a href="Imgs/pennsando.jpg" class="btn-read-more" download>Baixar Currículo</a>
+            <div class="skills">
+              <h3 class="titulo-softwares">Softwares:</h3>
+              <div class="skill">
+                <div class="skill-title-main">
+                  <img class="premiere-logo" src="Imgs/adobe-premiere-pro-logo.svg">
+                  <h3 class="skill-title">Premiere - 75%</h3>
                 </div>
-    
-                <div class="sobre-coluna2"></div>
-                    <div class="conteudo-sobre-coluna2">
-                        <div class="sobre-texto">
-                            <div class="titulo-sobre">Ricardo Amorim</div>
-                            <p class="sobre-resumo">Edito vídeos a 5 anos. Prezo pela qualidade em meus trabalhos, dando o meu melhor para a suavidade e pela fluidez do vídeo, assim como das animações. Uma edição simples, fluída e leve é a chave para o sucesso, sendo sempre o meu intuito nos vídeos.
-                            </p>                            
-                        </div>
-                        <div class="skills">
-                            <h3 class="titulo-softwares">Softwares:</h3>
-                            <div class="skill html">
-                              <div class="skill-title-main">
-                                <img class="premiere-logo" src="Imgs/adobe-premiere-pro-logo.svg">
-                                <h3 class="skill-title">Premiere - 75%</h3>                                                    
-                              </div>                                          
-                              <div class="skill-bar">
-                                <div class="skill-progress-premiere" data-progress="90%"></div>
-                              </div>
-                            </div>
-                            <div class="skill css">
-                                <div class="skill-title-main">
-                                    <img class="after-logo" src="Imgs/adobe-after-effects-logo.svg">
-                                    <h3 class="skill-title-aftereffects">After Effects - 80%</h3>
-                                </div>                                
-                              <div class="skill-bar">
-                                <div class="skill-progress-aftereffects" data-progress="70%"></div>
-                              </div>
-                            </div>
-                            <div class="skill js">
-                                <div class="skill-title-main">
-                                    <img class="ps-logo" src="Imgs/adobe-photoshop-logo-2021.svg">
-                                    <h3 class="skill-title">Photoshop - 60%</h3>
-                                </div>                                
-                                    <div class="skill-bar">
-                                        <div class="skill-progress-photoshop" data-progress="80%"></div>                                        
-                                    </div>
-                                </div>
-                            </div>                                 
-
-                            <a href="Imgs/pennsando.jpg" class="btn-read-more" download>Baixar Currículo</a>
-                    </div>                     
+                <div class="skill-bar">
+                  <div class="skill-progress-premiere" data-progress="90%"></div>
                 </div>
-            </div>            
-        </div> 
+                <div class="skill-desc-main"></div>
+                <h3 class="skill-desc"><i class="fa-solid fa-wrench"></i>&nbsp&nbsp&nbspMagic Bullet Looks + Flow + Animation Composer</h3>
+              </div>
+              <div class="skill">
+                <div class="skill-title-main">
+                  <img class="after-logo" src="Imgs/adobe-after-effects-logo.svg">
+                  <h3 class="skill-title-aftereffects">After Effects - 80%</h3>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress-aftereffects" data-progress="70%"></div>
+                </div>
+                <div class="skill-desc-main"></div>
+                <h3 class="skill-desc"><i class="fa-solid fa-wrench"></i>&nbsp&nbsp&nbspSapphire FX + RG Looks + Saber + Motion + Animation Composer + Element 3D + RSMB e mais...</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skillps">
+                <div class="skill-title-main">
+                  <img class="ps-logo" src="Imgs/adobe-photoshop-logo-2021.svg">
+                  <h3 class="skill-title">Photoshop - 60%</h3>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress-photoshop" data-progress="80%"></div>
+                </div>
+                <div class="skill-desc-main"></div>
+                <h3 class="skill-desc"><i class="fa-solid fa-wrench"></i>&nbsp&nbsp&nbspExperiência em banners, thumbnails e motion.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
     </section>
 
     <!--serviços section-->
-
     <section class="services" id="services">
-        <div class="services-max-width">
-            <!--PORTFOLIO-->
-            <div class="services-titulo">            
-              <p class="portfolio-portfolio">Portfólio</p>                                
-            </div>
-            
-            <div class="containerportfolio">
-              <img class="portfoliopreview" src="Imgs/portfolio-preview.png">
-              <a href="https://risixdzn.github.io/portfolio/" class="saibamais-btn">Saiba Mais</a>
-            </div>
+      <div class="services-max-width">
 
-            <hr class="divisao">
-
-            <!--SERVIÇOS-->
-            <div class="services-titulo">            
-                <p class="services-services">Serviços</p>                                
-            </div>
-
-            <div class="services-subtitulo">            
-                <p class="services-services-subtitulo">Trabalhos e colaborações recentes.</p>                                
-            </div>
-
-            <div class="cards">
-                <div class="card-wrap">
-                  <img
-                    src="Imgs/points3.png"
-                    class="points points1 points-sq"
-                    alt=""
-                  />
-                  <div class="card" data-card="Crystal">
-                    <div class="card-content z-index">
-                      <img src="Imgs/crystal-icon.png" class="icon" alt="" />
-                      <h3 class="title-sm">Crystal</h3>
-                      <p class="text">
-                        Canal focado em League of Legends. Montages, highlights e outros videos são o foco da página.
-                      </p>
-                      <a href="https://www.youtube.com/channel/UCtn-xNufy2gRqspVod8z_rQ" class="btn-read-more" target="_blank">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="card-wrap">
-                  <div class="card" data-card="Ignite">
-                    <div class="card-content z-index">
-                      <img src="Imgs/ignite-icon.png" class="icon" alt="" />
-                      <h3 class="title-sm">Ignite© - League of Legends</h3>
-                      <p class="text">
-                        Always on Fire.                        
-                      </p>
-                      <p class="text2">
-                        O primeiro canal brasileiro de League of Legends que inovou o estilo de edição da região.
-
-                      </p>
-                      <a href="https://twitter.com/ignitelolbr" class="btn-read-more" target="_blank">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="card-wrap">
-                  <img
-                    src="./img/shapes/points3.png"
-                    class="points points2 points-sq"
-                    alt=""
-                  />
-                  <div class="card" data-card="rsx">
-                    <div class="card-content z-index">
-                      <img src="Imgs/risix-icon.png" class="icon" alt="" />
-                      <h3 class="title-sm">risiXDzn&copy</h3>
-                      <p class="text">
-                        Canal pessoal. Arquiva algumas edits curtas e pequenos videos teste.
-                      </p>
-                      <a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" class="btn-read-more">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!--PORTFOLIO-->
+        <div class="services-titulo">
+          <p class="portfolio-portfolio">Portfólio</p>
         </div>
+        <div class="containerportfolio">
+          <img class="portfoliopreview" src="Imgs/portfolio-preview.png">
+          <a href="https://risixdzn.github.io/portfolio/" class="saibamais-btn">Saiba Mais</a>
+        </div>
+        <hr class="divisao">
+
+        <!--SERVIÇOS-->
+        <div class="services-titulo">
+          <p class="services-services">Serviços</p>
+        </div>
+        <div class="services-subtitulo">
+          <p class="services-services-subtitulo">Trabalhos e colaborações recentes.</p>
+        </div>
+        <div class="cards">
+          <div class="card-wrap">
+            <img src="Imgs/points3.png" class="points points1 points-sq" alt="" />
+            <div class="card" data-card="Crystal">
+              <div class="card-content z-index">
+                <img src="Imgs/crystal-icon.png" class="icon" alt="" />
+                <h3 class="title-sm">Crystal</h3>
+                <p class="text">
+                  Canal focado em League of Legends. Montages, highlights e outros videos são o foco da página.
+                </p>
+                <a href="https://www.youtube.com/channel/UCtn-xNufy2gRqspVod8z_rQ" class="btn-read-more" target="_blank">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="Burn">
+              <div class="card-content z-index">
+                <img src="Imgs/ignite-icon.png" class="icon" alt="" />
+                <h3 class="title-sm">Burn© - League of Legends</h3>
+                <p class="text">
+                  Always on Fire.
+                </p>
+                <p class="text2">
+                  O primeiro canal brasileiro de League of Legends que inovou o estilo de edição da região.
+                </p>
+                <a href="https://twitter.com/burnfxbr" class="btn-read-more" target="_blank">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <img src="./img/shapes/points3.png" class="points points2 points-sq" alt="" />
+            <div class="card" data-card="rsx">
+              <div class="card-content z-index">
+                <img src="Imgs/risix-icon.png" class="icon" alt="" />
+                <h3 class="title-sm">risiXDzn&copy</h3>
+                <p class="text">
+                  Canal pessoal. Arquiva algumas edits curtas e pequenos videos teste.
+                </p>
+                <a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" class="btn-read-more">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <!--SERVIÇOS END-->
 
-    <!-- footer -->
+    <!--CONTATO START-->
+    <section class="contato" id="contato">
+      <div class="contato-max-width">
+        <div class="cttbox">
+           <h1 class="title">Contato</h3>
+           <h2 class="subtitle">Vamos trabalhar juntos!</h2>
+           <h3 class="desc">Quer fazer um pedido, tirar alguma duvida, ou até mesmo dar uma dica?<br>Entre em contato por meio do Twitter!</h3>
+           <a class="button" href="https://twitter.com/risixdzn" target="_blank">Contato</a>
+           <div class="social-menu-ctt">
+            <ul>
+              <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--CONTATO END-->
+
+    <!-- footer -->
     <footer class="footer">
       <div class="footer__addr">
         <img class="imgfooter" src="Imgs/Logo.svg" alt="risiXDzn©">
-            
         <h2>Contact</h2>
-        
         <address>
           @risixdzn - Twitter <i class="fa fa-twitter"></i><br>
-              
           <a class="footer__btn" href="mailto:contatorisix@gmail.com">Email</a>
         </address>
       </div>
-      
       <ul class="footer__nav">
         <li class="nav__item">
           <h2 class="nav__title">Socials</h2>
-    
           <ul class="nav__ul">
             <li>
-              <i class="fa fa-twitter"></i><a href="https://twitter.com/risixdzn" target="_blank">  Twitter</a>
+              <i class="fa fa-twitter"></i><a href="https://twitter.com/risixdzn" target="_blank"> Twitter</a>
             </li>
-    
             <li>
-              <i class="fa fa-youtube"></i><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank">  Youtube</a>
+              <i class="fa fa-youtube"></i><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"> Youtube</a>
             </li>
-                
             <li>
-              <i class="fa fa-github"></i><a href="https://github.com/risixdzn" target="_blank">  Github</a>
+              <i class="fa fa-github"></i><a href="https://github.com/risixdzn" target="_blank"> Github</a>
             </li>
           </ul>
         </li>
-        
         <li class="nav__item nav__item--extra">
           <h2 class="nav__title">Links</h2>
-          
           <ul class="nav__ul nav__ul--extra">
             <li>
-              <i class="fa-brands fa-discord"></i><a href="https://discord.gg/invite/8nvG4Ng3Sr" target="_blank">  Discord</a>
+              <i class="fa-brands fa-discord"></i><a href="https://discord.gg/invite/8nvG4Ng3Sr" target="_blank"> Discord</a>
             </li>
-            
             <li>
-              <i class="fa-solid fa-tree"></i><a href="https://linktr.ee/risiXDzn">  Linktree</a>
+              <i class="fa-solid fa-tree"></i><a href="https://linktr.ee/risiXDzn"> Linktree</a>
             </li>
-            
             <li>
-              <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr">  Ignite</a>
+              <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr"> Ignite</a>
             </li>
-            
             <li>
-              <i class="fa-solid fa-book"></i><a href="https://risixdzn.github.io/portfolio">  Portfolio</a>
+              <i class="fa-solid fa-book"></i><a href="https://risixdzn.github.io/portfolio"> Portfolio</a>
             </li>
-            
             <li>
-              <i class="fa-brands fa-bitcoin"></i><a href="#">  Prices</a>
+              <i class="fa-brands fa-bitcoin"></i><a href="https://risixdzn.github.io/precos"> Preços</a>
             </li>
-            
             <li>
-              <i class="fa-solid fa-plus"></i><a href="#">  More</a>
+              <i class="fa-solid fa-plus"></i><a href="#"> More</a>
             </li>
           </ul>
         </li>
-        
         <li class="nav__item">
           <h2 class="nav__title">Legal</h2>
-          
           <ul class="nav__ul">
             <li>
               <a href="https://www.privacypolicygenerator.info/live.php?token=VXlY9cJBSzZf07msPmkQh5xkyJBiWQnI">Privacy Policy</a>
             </li>
-            
             <li>
               <a href="https://www.termsandconditionsgenerator.com/live.php?token=h1RxlxoUbOGpxW5FpBzpbRnW6Fr6gvZm">Terms of Use</a>
             </li>
-            
-            
           </ul>
         </li>
       </ul>
-      
       <div class="legal">
         <script>
-            document.write('&copy;' );
-            document.write(' 2020 - ');
-            document.write(new Date().getFullYear());
-            document.write(' risiXDzn - All Rights Reserved.');
-            document.write('<br/>Last Updated : ');
-            document.write(document.lastModified);
-        </script>              
+          document.write('&copy;');
+          document.write(' 2020 - ');
+          document.write(new Date().getFullYear());
+          document.write(' risiXDzn - All Rights Reserved.');
+          document.write('<br/>Last Updated : ');
+          document.write(document.lastModified);
+        </script>
       </div>
     </footer>
 
     <!-- footer end -->
 
     <!--scrollreveal-->
-
     <script>
       ScrollReveal({
-	      reset: true,
-	      distance: '60px',
-	      duration: 2500,
-	      delay: 400,
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
       });
-
-      ScrollReveal().reveal('.sobre-titulo, .services-titulo, .services-subtitulo', { delay: 0 });     
-      ScrollReveal().reveal('.sobre-coluna1', { delay: 500 });
-      ScrollReveal().reveal('.conteudo-sobre-coluna2', { delay: 500 });
-      ScrollReveal().reveal('.imgleesin', { delay: 0 });    
-      ScrollReveal().reveal('.conteudo-home, .divisao', { delay: 0  });  
-      ScrollReveal().reveal('.cards, .containerportfolio', { delay: 200 });    
-      
+      ScrollReveal().reveal('.sobre-titulo, .services-titulo, .services-subtitulo', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.sobre-coluna1', {
+        delay: 500
+      });
+      ScrollReveal().reveal('.conteudo-sobre-coluna2', {
+        delay: 500
+      });
+      ScrollReveal().reveal('.imgleesin', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.conteudo-home, .divisao', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.cards, .containerportfolio', {
+        delay: 200
+      });
     </script>
 
     <!--scrollreveal end-->
-    
   </body>
 </html>
